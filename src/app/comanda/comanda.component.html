@@ -4,7 +4,7 @@
     <div id="wrapper">
       <div id="comanda">
         <h1>COMANDA</h1>
-        <form>
+        <form [formGroup]="formComanda" (ngSubmit)="onProcessar()">
 
           <p>
             <label>Chopp</label>
