@@ -8,28 +8,32 @@
 
           <p>
             <label>Chopp</label>
-            <input type="text" name="inChopp"/>
+            <input type="text" name="inChopp" FromControlName="chopp"/>
           </p>
 
           <p>
               <label>Pizzas</label>
-              <input type="text" name="inPizzas"/>
+              <input type="text" name="inPizzas" formControlName="pizzas"/>
             </p>
 
             <p>
                 <label>Recheios</label>
-                <input type="text" name="inRecheios"/>
+                <input type="text" name="inRecheios" formControlName="recheios"/>
               </p>
 
               <p>
                   <label>Pessoas</label>
-                  <input type="text" name="inPessoas"/>
+                  <input type="text" name="inPessoas" formControlName="pessoas"/>
+                </p>
+
+                <p class="keepcomanda">
+                  <input type="checkbox" name="inServico" formControlName="taxa"/>
+                  <label>Taxa de Serviço</label>
                 </p>
 
                 <p class="comanda button">
-                  <input type="submit" value="registrar" />
-
-                </p>
+                  <input type="submit" value="registrar"/>
+                 </p>
 
         </form>
 

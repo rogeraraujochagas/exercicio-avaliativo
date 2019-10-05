@@ -8,9 +8,20 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class ComandaComponent implements OnInit {
 
+  formComanda: FormGroup;
+
   constructor(public formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+     this.formComanda = this.formBuilder.group({
+       chopp : this.formBuilder.control(''),
+       pizzas : this.formBuilder.control(''),
+       recheios : this.formBuilder.control(''),
+       pessoas : this.formBuilder.control(''),
+       taxa : this.formBuilder.control(true)
+
+     })
   }
 
 }
